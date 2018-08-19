@@ -1,8 +1,11 @@
 var katzDeliLine=[];
-function takeANumber(katzDeliLine,name){
-  katzDeliLine.push(name);
-  var line_position=katzDeliLine.length;
-  return (`Welcome, ${name}. You are number ${line_position} in line.`);
+var number=1
+function GiveMeANumber(katzDeliLine){
+  //katzDeliLine.
+  //line_positionkatzDeliLine[-1]
+  katzDeliLine.push(number);
+  number=number+1
+  return (`You are number ${number} in line.`);
 }
 function nowServing(katzDeliLine){
   if (katzDeliLine.length===0){
